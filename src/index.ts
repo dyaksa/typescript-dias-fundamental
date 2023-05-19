@@ -64,6 +64,7 @@ interface Intel extends IProcessor {
 
 interface AMD extends IProcessor {
   precisionBoost: boolean;
+  readyBoost?: string;
 }
 
 const createIntel = (processor: Intel): void => {
